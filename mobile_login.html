@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 로그인</title>
+<style>
+    * {margin:0; padding:0;}
+    a{text-decoration: none;
+    color:#333;
+    display: none;}
+    li {list-style:none;}
+    .mo{
+        width:375px;
+        height: 812px;
+        border:1px soid #000;
+        background-color: #DFCED4;
+        margin:0 auto;
+        text-align:center;
+        position: relative;
+    }
+    .mo h1 {
+        font-size:40px;
+        text-align:center;
+        padding:100px;
+        color:white;
+        }
+    fieldset{border:0;}
+    legend{
+        position:absolute;
+        left:-99999px;
+    }
+    .mo label {
+        position: absolute;
+        left:-99999px;
+    }
+    /* .mo input[type="id"]{
+        margin-bottom: 20px; */
+    /* } */
+    .mo input[type="ID"],
+    .mo input[type="password"] {
+        padding:10px;
+        width:275px;
+        height:40px;
+        font-size:16px;
+        margin-bottom: 20px;
+    }
+    .mo .a01 button{
+        position: absolute;
+        left:38px;
+        background-color: transparent;
+        border:0;
+        font-size:14px;
+    }
+    .mo .a02 button{
+        position:absolute;
+        right:38px;
+        background-color: transparent;
+        border:0;
+        font-size:14px;
+    }
+    .mo .a03 button{
+        position:absolute;
+        top:517px;
+        left:132px;
+        width:115px;
+        height: 40px;
+        background-color: white;
+        border:1px solid #000;
+        font-size:16px;
+        box-shadow: rgba(0, 0, 0, 0.507) 1px 2px 5px;
+    }
+    .mo .a04 button{
+        position:absolute;
+        top:580px;
+        left:40px;
+        width:115px;
+        height:30px;
+        font-size:14px;
+        background-color: white;
+        border:1px solid #000;
+        box-shadow: rgba(0, 0, 0, 0.507) 1px 2px 5px;
+    }
+    .mo .a05 button{
+        position: absolute;
+        top:580px;
+        right:40px;
+        width:115px;
+        height:30px;
+        font-size:14px;
+        background-color: white;
+        border:1px solid #000;
+        box-shadow: rgba(0, 0, 0, 0.507) 1px 2px 5px;
+    }
+</style>
+</head>
+<body>
+    <div class="mo">
+        <form action="" method="POST">
+            <h1>LOGIN</h1>
+            <fieldset>
+                <legend>로그인</legend>
+                <div>
+                    <label for="id">ID</label>
+                    <input type="ID" id="id" placeholder="ID" autocomplete="off">
+                </div>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="pass" placeholder="PASSWORD" autocomplete="off">
+                </div>
+                <div class="a01">
+                    <button>아이디/비밀번호 찾기</button>
+                </div>
+                <div class="a02"> 
+                    <button type="button" onclick="window.open('https://imep129.github.io/login-page.github.io/mobile_join')">회원가입</button>
+                </div>
+                <div class="a03">
+                    <button>LOG IN</button>
+                </div>
+                <div class="a04">
+                    <button>카카오로 로그인</button>
+                </div>
+                <div class="a05">
+                    <button>네이버로 로그인</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

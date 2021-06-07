@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <style>
+        * {margin:0;padding:0;}
+        li {list-style:none;}
+        a {text-decoration:none;
+            color:#333;
+            display:block;}
+            .wrap {
+                background:url(img/bg03.jpg) center center / cover no-repeat;
+                width:1900px;
+                height:1080px;
+                
+                
+            }
+            fieldset{border:0;}
+            legend {
+                position:absolute;
+                left:-99999px;
+            }
+            .wrap h1 {
+                color:#fff;
+                font-size:50px;
+                margin-bottom:50px;
+                position: absolute;
+                top:255px;
+                left:175px;
+                
+            }
+            .wrap label {
+                position:absolute;
+                left:-999999px;
+            }
+            .wrap #id {
+                position: absolute;
+                top:370px;
+                left:175px;
+            }
+            .wrap #pass {
+                position: absolute;
+                top:470px;
+                left:175px;
+            }
+            input[type="text"],
+            input[type="password"] {
+                width:594px;
+                height:80px;
+                margin:15px 0;
+                box-sizing: border-box;
+                padding-left:10px;
+                border:1px solid rgb(71, 71, 71);
+
+            }
+            input[type="text"]:focus,
+            input[type="password"]:focus{
+                outline: 1px solid rgb(248, 191, 229);
+                border:1px solid transparent;
+            }
+            button {
+                font-size:16px;
+                background-color: transparent;
+                color:white;
+                font-weight: bold;
+                border: 1px solid transparent;
+                /* box-shadow: rgba(0, 0, 0, 0.295) 5px 5px 10px; */
+            }
+            #login {
+                position: absolute;
+                top:620px;
+                left:598px;
+                background-color: thistle;
+                width:170px;
+                height: 50px;
+                font-size:20px;
+            }
+            #naver {
+                position: absolute;
+                top:690px;
+                left:650px;
+                
+            }
+            #kakao {
+                position: absolute;
+                top:715px;
+                left:650px;
+            }
+            #join {
+                position: absolute;
+                top:690px;
+                left:175px;
+            }
+            #ip {
+                position: absolute;
+                top:715px;
+                left:175px;
+            }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form action="" method="psot">
+            <h1>LOGIN</h1>
+            <fieldset>
+                <legend>로그인</legend>
+                <div>
+                    <label for="id">ID</label>
+                    <input type="text" id="id" placeholder="ID">
+                
+                </div>
+                <div>
+                    <label for="pass">password</label>
+                    <input type="password" id="pass" placeholder="PASSWORD">
+                </div>
+                <button id="login">로그인</button>
+                <button id="naver">네이버로 로그인</button>
+                <button id="kakao">카카오로 로그인</button>
+                <button id="ip">아이디/비밀번호 찾기</button>
+                <button id="join">회원가입</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

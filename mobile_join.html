@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 회원가입</title>
+    <link href="css/mobile_join.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="form">
+    <form action="" method="POST">
+        <h1>회원가입</h1>
+        <fieldset>
+            <div class="all">
+            <legend>회원가입</legend>
+            <div class="info">
+                <label id="info">기본정보</label>
+                <label id="info02">* 필수</label>
+            </div>
+            <div class="name">
+                <label for="name">이름 *</label>
+                <input type="text" name="name" placeholder="이름을 입력해주세요"required autofocus>
+            </div>
+            <div class="id">
+                <label for="id">아이디 *</label>
+                <input type="id" name="id" placeholder="아이디를 입력해주세요"required>
+                <input type="button" value="중복확인">            </div>
+            <div class="pass">
+                <label for="pass">비밀번호 *</label>
+                <input type="password" name="pass" id="pass" placeholder="비밀번호를 입력해주세요" required>
+            </div>
+            <div class="pass2">
+                <label for="pass2">비밀번호 확인 *</label>
+                <input type="password" name="pass2" id="pass2" placeholder="한번 더 입력해주세요" required>
+            </div>
+            <div class="address">
+                <label>주소 *</label>
+                <input type="text" name="addr" id="addr" placeholder="우편번호" required>
+                <input type="button" value="주소찾기">
+                <input type="text" name="addr2" id="addr2">
+                <input type="text" name="addr3" id="addr3">
+
+            </div>
+            <div class="phone">
+                <label>휴대전화 *</label>
+                <select>
+                    <option>KT</option>
+                    <option>SKT</option>
+                    <option>U+</option>
+                    <option>알뜰폰</option>
+                </select>
+
+                <input type="text" name="number2" id="number2" required>
+            </div>
+            <div class="email">
+                <label>이메일</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="birth">
+                <label>생년월일 *</label>
+                <input type="radio"  id="a1" name="2" value="1"><span>양력</span required>
+                <input type="radio" id="a2" name="2" value="2"><span>음력</span required>
+                <select class="b1">
+                    <option>1990</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                    <option>...</option>
+                </select><span class="b01">년</span>
+                <select class="b2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>...</option>
+                </select><span class="b02">월</span>
+                <select class="b3">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>...</option>
+                </select><span class="b03">일</span>
+            </div>
+            <div class="ok">
+            <p>약관동의</p>
+            </div>
+            <div class="a01">
+                <label>이용약관 동의(필수)</label>
+               <input type="radio" name="o" id="o" required><span>동의</span>
+
+            </div>
+            <div class="a02">
+                <label>개인정보취급방침 동의(필수)</label>
+                <input type="radio" name="o2" id="o2" required><span>동의</span>
+            </div>
+            <div class="a03">
+                <label>SMS수신 동의(선택)</label>
+                <input type="radio" name="o3" id="o3" ><span>동의</span>
+            </div>
+            <div class="all2">
+            <label>전체 동의</label>
+            <input type="radio" name="all" id="all" >
+           </div>
+            <div class="end">
+                <input type="reset" id="end1" value="취소">
+                <input type="submit" id="end2" value="확인">
+            </div>
+            </div>
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>
